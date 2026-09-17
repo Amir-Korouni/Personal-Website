@@ -1,30 +1,35 @@
 import { Button } from "@/components/ui/button";
 import { ArrowBigLeft, ArrowBigRight } from "lucide-react";
 import Link from "next/link";
+import Container from "../style.module.css";
 
 const Hero = () => {
   return (
     <>
-      <section className="w-full h-[100vh] flex justify-center items-center relative z-[10]">
-        <section className="w-[50%] flex flex-col gap-10 justify-center">
+      <section className={Container.container}>
+        <section className={Container.subContainer}>
           <h1 className="w-[50%] h-[4rem] border-4 border-[#150050] px-5 flex justify-center items-center rounded text-4xl">
             Web Developer
           </h1>
           <h1 className="text-6xl">Hi, I'm Amir Korouni</h1>
           <div>
             <h3 className="text-2xl">
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Esse,
-              cum! Vel laboriosam nostrum laudantium dolorum molestias id
-              praesentium consectetur esse eius quae ullam deleniti non, sint in
-              cum totam quo? Lorem ipsum dolor sit amet consectetur adipisicing
-              elit. Ullam tempore nobis dolores nesciunt nihil atque consequatur
-              minus eius animi ad totam enim illo obcaecati harum recusandae
-              nulla, illum error aspernatur.
+              Frontend Developer React • TypeScript • Next.js
+              <br />
+              Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ipsa,
+              reprehenderit? Id modi porro tempora vitae corrupti ipsum culpa
+              numquam ad exercitationem sint, aspernatur quidem asperiores magni
+              ullam dicta fugiat perspiciatis.
             </h3>
           </div>
-          <div>
+          <div className="w-full flex justify-between">
+            <Link href="#projects">
+              <Button className="w-[200px] h-[4rem] bg-[#610094] hover:bg-[#150050] flex justify-center items-center gap-2 cursor-pointer float-right ">
+                Projects
+              </Button>
+            </Link>
             <Link href="https://github.com">
-              <Button className="w-[20%] h-[4rem] bg-[#610094] hover:bg-[#150050] flex justify-center items-center gap-2 cursor-pointer float-right ">
+              <Button className="w-[200px] h-[4rem] bg-[#610094] hover:bg-[#150050] flex justify-center items-center gap-2 cursor-pointer float-right ">
                 Git hub <ArrowBigRight />
               </Button>
             </Link>

@@ -1,10 +1,14 @@
+import { Languages, Sun } from "lucide-react";
 import Link from "next/link";
 
 const NavBar = () => {
   return (
     <>
-      <nav id="navbar" className="w-full h-[5rem] flex justify-center fixed z-[11]">
-        <section className="w-[50%] h-full flex justify-between items-center mt-2 px-5 bg-[#0a0a0ae6] border rounded-[20px]">
+      <nav
+        id="navbar"
+        className="w-full h-[5rem] flex justify-center fixed z-[21]"
+      >
+        <section className="w-[50%] h-full flex justify-between items-center mt-2 px-5 bg-[#000000c8] border rounded-[20px]">
           <div className="flex justify-center items-center gap-2">
             <div className="w-[40px] h-[40px] bg-[#610094] flex justify-center items-center border rounded">
               AK
@@ -29,9 +33,13 @@ const NavBar = () => {
                 <Link href="#contact">Contact</Link>
               </li>
             </ul>
-            <div className="flex gap-2">
-              <div>EN</div>
-              <div>Light</div>
+            <div className="flex gap-4">
+              <div>
+                <Languages className="cursor-pointer" />
+              </div>
+              <div>
+                <Sun className="cursor-pointer" />
+              </div>
             </div>
           </div>
         </section>

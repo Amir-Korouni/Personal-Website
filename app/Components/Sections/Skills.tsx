@@ -1,5 +1,5 @@
-import Container from "../style.module.css";
-import SkillCard from "./SkillCard";
+import Container from "../../style.module.css";
+import SkillCard from "../ui/SkillCard";
 import { FaReact } from "react-icons/fa";
 import {
   SiDocker,

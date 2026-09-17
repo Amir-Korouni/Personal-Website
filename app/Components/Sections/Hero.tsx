@@ -1,8 +1,8 @@
 import { Button } from "@/components/ui/button";
 import { ArrowBigLeft, ArrowBigRight } from "lucide-react";
 import Link from "next/link";
-import Container from "../style.module.css";
-import TextAnimation from "./TextAnimation";
+import Container from "../../style.module.css";
+import TextAnimation from "../ui/TextAnimation";
 
 const Hero = () => {
   return (

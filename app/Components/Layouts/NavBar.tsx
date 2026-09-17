@@ -1,6 +1,6 @@
 import { Languages } from "lucide-react";
 import Link from "next/link";
-import ThemeToggle from "./ThemeToggle";
+import ThemeToggle from "../ui/ThemeToggle";
 
 const NavBar = () => {
   return (

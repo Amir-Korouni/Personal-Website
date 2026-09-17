@@ -1,5 +1,5 @@
 import { Mail } from "lucide-react";
-import Container from "../style.module.css";
+import Container from "../../style.module.css";
 import Link from "next/link";
 import { Button } from "@/components/ui/button";
 

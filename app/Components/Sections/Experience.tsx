@@ -1,5 +1,5 @@
-import Container from "../style.module.css";
-import ExperienceCard from "./ExperienceCard";
+import Container from "../../style.module.css";
+import ExperienceCard from "../ui/ExperienceCard";
 
 const Experience = () => {
   return (

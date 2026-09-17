@@ -1,5 +1,5 @@
-import Container from "../style.module.css";
-import ProjectCart from "./ProjcectCart";
+import Container from "../../style.module.css";
+import ProjectCart from "../ui/ProjcectCart";
 
 const Projects = () => {
   return (

@@ -1,4 +1,4 @@
-import Container from "../style.module.css";
+import Container from "../../style.module.css";
 
 const About = () => {
   return (

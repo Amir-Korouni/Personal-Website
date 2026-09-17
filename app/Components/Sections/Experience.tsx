@@ -1,3 +1,4 @@
+import { experiences } from "@/app/Types/Portfolio";
 import Container from "../../style.module.css";
 import ExperienceCard from "../ui/ExperienceCard";
 
@@ -19,33 +20,16 @@ const Experience = () => {
           <div className="absolute top-3 left-0 w-full h-px bg-zinc-700" />
 
           <div className="flex justify-between gap-5">
-            <div className="relative flex flex-col items-center w-full">
-              <div className="z-10 w-6 h-6 rounded-full bg-purple-600 border-4 border-black" />
-              <p className="mt-4 mb-5 text-purple-400 text-xl">2024</p>
-              <ExperienceCard title="Started Programming" stack={["C#"]} />
-            </div>
-
-            <div className="relative flex flex-col items-center w-full">
-              <div className="z-10 w-6 h-6 rounded-full bg-purple-600 border-4 border-black" />
-
-              <p className="mt-4 mb-5 text-purple-400 text-xl">2025</p>
-
-              <ExperienceCard
-                title="Web Fundamentals"
-                stack={["HTML", "CSS", "JavaScript"]}
-              />
-            </div>
-
-            <div className="relative flex flex-col items-center w-full">
-              <div className="z-10 w-6 h-6 rounded-full bg-purple-600 border-4 border-black" />
-
-              <p className="mt-4 mb-5 text-purple-400 text-xl">2026</p>
-
-              <ExperienceCard
-                title="Modern Web Development"
-                stack={["TypeScript", "React", "Next.js", "Tailwind"]}
-              />
-            </div>
+            {experiences.map((exp) => (
+              <div
+                className="relative flex flex-col items-center w-full"
+                key={exp.title}
+              >
+                <div className="z-10 w-6 h-6 rounded-full bg-purple-600 border-4 border-black" />
+                <p className="mt-4 mb-5 text-purple-400 text-xl">{exp.year}</p>
+                <ExperienceCard title={exp.title} stack={exp.stack} />
+              </div>
+            ))}
           </div>
         </div>
       </section>

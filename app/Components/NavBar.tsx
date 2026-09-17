@@ -1,7 +1,12 @@
-import { Languages, Sun } from "lucide-react";
+import { Languages } from "lucide-react";
 import Link from "next/link";
+import ThemeToggle from "./ThemeToggle";
 
 const NavBar = () => {
+  const handleTheme = () => {
+    console.log("Clicked");
+  };
+
   return (
     <>
       <nav
@@ -38,7 +43,7 @@ const NavBar = () => {
                 <Languages className="cursor-pointer" />
               </div>
               <div>
-                <Sun className="cursor-pointer" />
+                <ThemeToggle />
               </div>
             </div>
           </div>

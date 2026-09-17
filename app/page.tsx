@@ -21,9 +21,7 @@ export default function Home() {
         <Skills />
 
         <Projects />
-
-        <ProjectCart />
-
+        
         <Experience />
 
         <Contact />

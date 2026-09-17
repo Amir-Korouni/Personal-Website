@@ -10,7 +10,7 @@ type SkillCardProps = {
 const SkillCard = ({ skill, icone, desc }: SkillCardProps) => {
   return (
     <>
-      <Card className="w-[28%] h-[15rem] flex justify-center items-center rounded-xl text-zinc-100 bg-[#150050] duration-800 hover:scale-105 cursor-pointer">
+      <Card className="w-[28%] h-[15rem] flex justify-center items-center rounded-xl text-zinc-100 bg-[#150050] duration-800 cursor-pointer hover:-translate-x-1 hover:-translate-y-2 ">
         <CardContent className="flex flex-col items-center justify-center gap-3 p-6">
           {icone}
           <h3 className="text-2xl text-left">{skill}</h3>

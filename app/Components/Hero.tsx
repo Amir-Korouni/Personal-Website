@@ -6,7 +6,7 @@ import Container from "../style.module.css";
 const Hero = () => {
   return (
     <>
-      <section className={Container.container}>
+      <section className={Container.container} data-aos="fade-in" data-aos-delay="100">
         <section className={Container.subContainer}>
           <h1 className="w-[50%] h-[4rem] border-4 border-[#150050] px-5 flex justify-center items-center rounded text-4xl">
             Web Developer

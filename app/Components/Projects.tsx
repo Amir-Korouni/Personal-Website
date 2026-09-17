@@ -13,7 +13,10 @@ const Projects = () => {
               Let's see projects that i developed and work on it.
             </p>
           </div>
-          <div className="w-full flex gap-5 justify-center items-center flex-wrap ">
+          <div
+            className="w-full flex gap-5 justify-center items-center flex-wrap "
+            data-aos="fade-up"
+          >
             <ProjectCart
               name="Headphone Market"
               description="Lorem ipsum dolor sit amet consectetur adipisicing elit. Officia
@@ -39,10 +42,10 @@ const Projects = () => {
               stack={["JavaScript"]}
             />
             <ProjectCart
-              name="Headphone Market"
+              name="Game Info"
               description="Lorem ipsum dolor sit amet consectetur adipisicing elit. Officia
               quae, quas ipsam deserunt est voluptatum..."
-              stack={["React", "Typescript", "Tailwindcss"]}
+              stack={["HTML", "CSS", "JS"]}
             />
             <ProjectCart
               name="Headphone Market"

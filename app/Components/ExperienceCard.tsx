@@ -9,7 +9,7 @@ type ExCard = {
 const ExperienceCard = ({ title, stack }: ExCard) => {
   return (
     <>
-      <Card className="w-full min-h-[220px] border-zinc-800 bg-zinc-950 flex justify-center items-center text-zinc-100 bg-[#150050] duration-800 hover:scale-105  h-[15rem] ">
+      <Card className="w-full min-h-[220px] border-zinc-800 bg-zinc-950 flex justify-center items-center text-zinc-100 bg-[#150050] duration-800 hover:-translate-y-4  h-[15rem] ">
         <CardHeader className="size-full flex justify-center items-center">
           <Badge
             key={title}

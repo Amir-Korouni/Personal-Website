@@ -9,12 +9,14 @@ type ThemeProps = {
 
 export default function ThemeProvider({ children }: ThemeProps) {
   return (
-    <NextThemeProvider
-      attribute="class"
-      defaultTheme="dark"
-      enableSystem={false}
-    >
-      {children}
-    </NextThemeProvider>
+    <>
+      <NextThemeProvider
+        attribute="class"
+        defaultTheme="dark"
+        enableSystem={false}
+      >
+        {children}
+      </NextThemeProvider>
+    </>
   );
 }

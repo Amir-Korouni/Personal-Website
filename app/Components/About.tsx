@@ -3,7 +3,7 @@ import Container from "../style.module.css";
 const About = () => {
   return (
     <>
-      <section className={Container.container} id="about">
+      <section className={Container.container} id="about" data-aos="fade-right">
         <section className={Container.subContainer}>
           <div>
             <p className="text-zinc-100 mb-5">01 / About</p>

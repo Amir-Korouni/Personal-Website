@@ -3,7 +3,11 @@ import ExperienceCard from "./ExperienceCard";
 
 const Experience = () => {
   return (
-    <section className={Container.container} id="experience">
+    <section
+      className={Container.container}
+      id="experience"
+      data-aos="fade-left"
+    >
       <section className={Container.subContainer}>
         <div>
           <p className="text-zinc-100 mb-5">04 / Experience</p>

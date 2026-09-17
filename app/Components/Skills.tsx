@@ -15,7 +15,7 @@ import { FaC } from "react-icons/fa6";
 const Skills = () => {
   return (
     <>
-      <section className={Container.container} id="skills">
+      <section className={Container.container} id="skills" data-aos="fade-down">
         <section className={Container.subContainer}>
           <div>
             <p className="text-zinc-100 mb-5">02 / SKILLS</p>

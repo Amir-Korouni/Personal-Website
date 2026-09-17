@@ -1,7 +1,41 @@
-const ProjectCart = () => {
+import {
+  Card,
+  CardContent,
+  CardFooter,
+  CardHeader,
+} from "@/components/ui/card";
+import Link from "next/link";
+
+import { FaGithub } from "react-icons/fa6";
+
+type CardProp = {
+  name: string;
+  description: string;
+  stack: string[];
+};
+
+const ProjectCart = ({ name, description, stack }: CardProp) => {
   return (
     <>
-      <h2>Project Cart</h2>
+      <Card className="w-[30%] h-[10rem] flex justify-center items-center text-zinc-100 bg-[#150050] duration-800 hover:scale-105 cursor-pointerw-[28%] h-[15rem] flex justify-center items-center rounded-xl text-zinc-100 bg-[#150050] duration-800 hover:scale-105 cursor-pointer">
+        <CardHeader className="size-full flex justify-between">
+          <h2>{name}</h2>
+          <Link
+            href="https://github.com"
+            className="w-[40px] h-[40px] flex justify-center items-center bg-zinc-800 rounded"
+          >
+            <FaGithub size={30} />
+          </Link>
+        </CardHeader>
+        <CardContent>
+          <p>{description}</p>
+        </CardContent>
+        <CardFooter className="w-full h-[4rem] flex gap-4 bg-[#150050]">
+          {stack.map((item) => (
+            <p key={item} className="bg-zinc-900 p-1 border">{item}</p>
+          ))}
+        </CardFooter>
+      </Card>
     </>
   );
 };

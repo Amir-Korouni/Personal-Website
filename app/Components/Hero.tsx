@@ -2,25 +2,32 @@ import { Button } from "@/components/ui/button";
 import { ArrowBigLeft, ArrowBigRight } from "lucide-react";
 import Link from "next/link";
 import Container from "../style.module.css";
+import TextAnimation from "./TextAnimation";
 
 const Hero = () => {
   return (
     <>
-      <section className={Container.container} data-aos="fade-in" data-aos-delay="100">
+      <section
+        className={Container.container}
+        data-aos="fade-in"
+        data-aos-delay="100"
+      >
         <section className={Container.subContainer}>
-          <h1 className="w-[50%] h-[4rem] border-4 border-[#150050] px-5 flex justify-center items-center rounded text-4xl">
-            Web Developer
-          </h1>
+          <div className="w-[50%] h-[4rem] border-4 border-[#150050] px-5 flex justify-center items-center rounded text-4xl">
+            <TextAnimation message="  Web Developer" speed={60} />
+          </div>
           <h1 className="text-6xl">Hi, I'm Amir Korouni</h1>
           <div>
             <h3 className="text-2xl">
               Frontend Developer React • TypeScript • Next.js
-              <br />
-              Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ipsa,
+            </h3>
+            <TextAnimation
+              message="  Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ipsa,
               reprehenderit? Id modi porro tempora vitae corrupti ipsum culpa
               numquam ad exercitationem sint, aspernatur quidem asperiores magni
-              ullam dicta fugiat perspiciatis.
-            </h3>
+              ullam dicta fugiat perspiciatis."
+              speed={10}
+            />
           </div>
           <div className="w-full flex justify-between">
             <Link href="#projects">

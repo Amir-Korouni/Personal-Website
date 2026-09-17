@@ -3,7 +3,7 @@ import ExperienceCard from "./ExperienceCard";
 
 const Experience = () => {
   return (
-    <section className={Container.container}  id="experience">
+    <section className={Container.container} id="experience">
       <section className={Container.subContainer}>
         <div>
           <p className="text-zinc-100 mb-5">04 / Experience</p>
@@ -32,7 +32,6 @@ const Experience = () => {
               />
             </div>
 
-            {/* 2026 */}
             <div className="relative flex flex-col items-center w-full">
               <div className="z-10 w-6 h-6 rounded-full bg-purple-600 border-4 border-black" />
 
@@ -51,8 +50,8 @@ const Experience = () => {
         className="
                 absolute
                 z-[-1]
-                bottom-[10%]
-                right-[12%]
+                top-[20%]
+                left-[12%]
                 w-[600px]
                 h-[400px]
                 rounded-full

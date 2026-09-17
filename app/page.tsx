@@ -7,6 +7,7 @@ import ProjectCart from "./Components/ProjcectCart";
 import Experience from "./Components/Experience";
 import Contact from "./Components/Contact";
 import About from "./Components/About";
+import Footer from "./Components/Footer";
 
 export default function Home() {
   return (
@@ -21,10 +22,12 @@ export default function Home() {
         <Skills />
 
         <Projects />
-        
+
         <Experience />
 
         <Contact />
+
+        <Footer />
       </main>
     </>
   );

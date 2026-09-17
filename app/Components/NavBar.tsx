@@ -3,10 +3,6 @@ import Link from "next/link";
 import ThemeToggle from "./ThemeToggle";
 
 const NavBar = () => {
-  const handleTheme = () => {
-    console.log("Clicked");
-  };
-
   return (
     <>
       <nav

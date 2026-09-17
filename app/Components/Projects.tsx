@@ -27,16 +27,16 @@ const Projects = () => {
               stack={["React", "Typescript", "Tailwindcss"]}
             />
             <ProjectCart
-              name="Headphone Market"
+              name="Admin Panel"
               description="Lorem ipsum dolor sit amet consectetur adipisicing elit. Officia
               quae, quas ipsam deserunt est voluptatum..."
-              stack={["React", "Typescript", "Tailwindcss"]}
+              stack={["Html", "Css", "JavaScript"]}
             />
             <ProjectCart
-              name="Headphone Market"
+              name="XO Game in terminal"
               description="Lorem ipsum dolor sit amet consectetur adipisicing elit. Officia
               quae, quas ipsam deserunt est voluptatum..."
-              stack={["React", "Typescript", "Tailwindcss"]}
+              stack={["JavaScript"]}
             />
             <ProjectCart
               name="Headphone Market"

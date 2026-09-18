@@ -1,3 +1,4 @@
+import { projectsCard } from "@/app/Types/Portfolio";
 import Container from "../../style.module.css";
 import ProjectCart from "../ui/ProjcectCart";
 
@@ -17,42 +18,14 @@ const Projects = () => {
             className="w-full flex gap-5 justify-center items-center flex-wrap "
             data-aos="fade-up"
           >
-            <ProjectCart
-              name="Headphone Market"
-              description="Lorem ipsum dolor sit amet consectetur adipisicing elit. Officia
-              quae, quas ipsam deserunt est voluptatum..."
-              stack={["React", "Typescript", "Tailwindcss"]}
-            />
-            <ProjectCart
-              name="User Profile"
-              description="Lorem ipsum dolor sit amet consectetur adipisicing elit. Officia
-              quae, quas ipsam deserunt est voluptatum..."
-              stack={["React", "Typescript", "Tailwindcss"]}
-            />
-            <ProjectCart
-              name="Admin Panel"
-              description="Lorem ipsum dolor sit amet consectetur adipisicing elit. Officia
-              quae, quas ipsam deserunt est voluptatum..."
-              stack={["Html", "Css", "JavaScript"]}
-            />
-            <ProjectCart
-              name="XO Game in terminal"
-              description="Lorem ipsum dolor sit amet consectetur adipisicing elit. Officia
-              quae, quas ipsam deserunt est voluptatum..."
-              stack={["JavaScript"]}
-            />
-            <ProjectCart
-              name="Game Info"
-              description="Lorem ipsum dolor sit amet consectetur adipisicing elit. Officia
-              quae, quas ipsam deserunt est voluptatum..."
-              stack={["HTML", "CSS", "JS"]}
-            />
-            <ProjectCart
-              name="Headphone Market"
-              description="Lorem ipsum dolor sit amet consectetur adipisicing elit. Officia
-              quae, quas ipsam deserunt est voluptatum..."
-              stack={["React", "Typescript", "Tailwindcss"]}
-            />
+            {projectsCard.map((card) => (
+              <ProjectCart
+                key={card.name}
+                name={card.name}
+                stack={card.stack}
+                description={card.description}
+              />
+            ))}
           </div>
         </section>
       </section>

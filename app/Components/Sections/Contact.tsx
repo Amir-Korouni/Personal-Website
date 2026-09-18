@@ -15,20 +15,29 @@ const Contact = () => {
         <section className={Container.subContainer}>
           <div>
             <p className="text-foreground mb-5">05 / Contact</p>
-            <h2 className="text-6xl">Contact</h2>
+            <h2 className="text-6xl text-[clamp(2rem,5vw,5rem)] font-bold">
+              Contact
+            </h2>
             <p className="mt-4">Let's Build Something</p>
           </div>
-          <div className="w-full h-[50vh] flex flex-col justify-center items-center gap-5 bg-[#101010] border border-[#610094] rounded duration-600 drop-shadow-[0_0_40px_#150050] hover:drop-shadow-[0_0_100px_#610094] text-foreground">
+          <div className="min-w-full h-[50vh] flex flex-col justify-center items-center gap-5 bg-[#101010] border border-[#610094] rounded duration-600 drop-shadow-[0_0_40px_#150050] hover:drop-shadow-[0_0_100px_#610094] text-foreground">
             <Mail size={120} color="#610094" />
-            <h2 className="text-zinc-100 text-5xl">Get in touch</h2>
-            <h3 className="text-zinc-100">Remote / Worldwide</h3>
-            <Link href="https://email.com" className="text-zinc-100">
+            <h2 className="text-zinc-100 text-5xl text-[clamp(2rem,5vw,3rem)] font-bold">
+              Get in touch
+            </h2>
+            <h3 className="text-zinc-100 text-[clamp(0.9rem,1.5vw,1.8rem)] leading-relaxed">
+              Remote / Worldwide
+            </h3>
+            <Link
+              href="https://email.com"
+              className="text-zinc-100 text-[clamp(0.9rem,1.5vw,1.8rem)] leading-relaxed"
+            >
               www.darkghost87@gmail.com
             </Link>
-            <div className="flex gap-5">
+            <div className="flex gap-3">
               <Link
                 href="https://github.com"
-                className="w-[120px] h-[2.5rem] duration-400 cursor-pointer hover:-translate-x-1 hover:-translate-y-2 "
+                className="max-w-[120px] h-[2.5rem] duration-400 cursor-pointer hover:-translate-x-1 hover:-translate-y-2 "
               >
                 <Button className="size-full text-zinc-100 bg-[#150050] hover:bg-[#220080]">
                   GitHub
@@ -36,7 +45,7 @@ const Contact = () => {
               </Link>
               <Link
                 href="https://telegram.com"
-                className="w-[120px] h-[2.5rem] duration-400 cursor-pointer hover:-translate-x-1 hover:-translate-y-2 "
+                className="max-w-[120px] h-[2.5rem] duration-400 cursor-pointer hover:-translate-x-1 hover:-translate-y-2 "
               >
                 <Button className="size-full text-zinc-100 bg-[#150050] hover:bg-[#220080]">
                   Telegram
@@ -44,7 +53,7 @@ const Contact = () => {
               </Link>
               <Link
                 href="https://instagram.com"
-                className="w-[120px] h-[2.5rem] duration-400 cursor-pointer hover:-translate-x-1 hover:-translate-y-2 "
+                className="max-w-[120px] h-[2.5rem] duration-400 cursor-pointer hover:-translate-x-1 hover:-translate-y-2 "
               >
                 <Button className="size-full text-zinc-100 bg-[#150050] hover:bg-[#220080]">
                   Instagram
@@ -52,7 +61,7 @@ const Contact = () => {
               </Link>
               <Link
                 href="https://email.com"
-                className="w-[120px] h-[2.5rem] duration-400 cursor-pointer hover:-translate-x-1 hover:-translate-y-2 "
+                className="max-w-[120px] h-[2.5rem] duration-400 cursor-pointer hover:-translate-x-1 hover:-translate-y-2 "
               >
                 <Button className="size-full text-zinc-100 bg-[#150050] hover:bg-[#220080]">
                   Email

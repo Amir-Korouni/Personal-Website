@@ -20,12 +20,12 @@ const Skills = () => {
         <section className={Container.subContainer}>
           <div>
             <p className="text-foreground mb-5">02 / SKILLS</p>
-            <h2 className="text-6xl">My Skills</h2>
-            <p className="mt-4">
+            <h2 className="text-6xl text-[clamp(2rem,5vw,5rem)] font-bold">My Skills</h2>
+            <p className="mt-4 text-[clamp(0.9rem,1.5vw,1.8rem)] leading-relaxed">
               The tools and technologies I learn and use it.
             </p>
           </div>
-          <div className="w-full flex gap-5 justify-center items-center flex-wrap ">
+          <div className="w-full flex gap-5 justify-center items-center flex-wrap">
             {skills.map((item) => (
               <SkillCard
                 key={item.skill}

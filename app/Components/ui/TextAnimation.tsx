@@ -28,7 +28,7 @@ const TextAnimation = ({ message, speed }: AnimationProp) => {
 
   return (
     <>
-      <h2 className="text-2xl">{animationText}</h2>
+      <h2 className="text-2xl text-[clamp(0.9rem,1.5vw,1.6rem)] leading-relaxed">{animationText}</h2>
     </>
   );
 };

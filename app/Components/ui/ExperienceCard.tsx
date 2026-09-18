@@ -9,19 +9,19 @@ type ExCard = {
 const ExperienceCard = ({ title, stack }: ExCard) => {
   return (
     <>
-      <Card className="w-full min-h-[220px] border-zinc-800 bg-zinc-950 flex justify-center items-center text-zinc-100 bg-[#150050] duration-800 hover:-translate-y-4  h-[15rem] ">
+      <Card className="w-full min-h-[220px]  border-zinc-800 bg-zinc-950 flex justify-center items-center text-zinc-100 bg-[#150050] duration-800 hover:-translate-y-4  h-[15rem] basis-full md:basis-[calc(50%-12px)] lg:basis-[calc(33.333%-16px)]">
         <CardHeader className="size-full flex justify-center items-center">
           <Badge
             key={title}
             variant="secondary"
             className="w-[110%] h-[4rem] bg-purple-500/10 text-purple-300 hover:bg-purple-500/20"
           >
-            <p className="text-base">{title}</p>
+            <p className="w-[100px] text-[clamp(0.9rem,1.5vw,1.125rem)] leading-7">{title}</p>
           </Badge>
         </CardHeader>
         <CardContent>
           {stack.map((item) => (
-            <h2 className="text-base" key={item}>
+            <h2 className="text-[clamp(0.9rem,1.5vw,1.125rem)] leading-7" key={item}>
               {item}
             </h2>
           ))}

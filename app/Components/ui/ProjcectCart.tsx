@@ -17,7 +17,7 @@ type CardProp = {
 const ProjectCart = ({ name, description, stack }: CardProp) => {
   return (
     <>
-      <Card className="w-[30%] h-[10rem] flex justify-center items-center text-zinc-100 bg-[#150050] duration-800 hover:scale-105 cursor-pointerw-[28%] h-[15rem] ">
+      <Card className="w-[225px] h-[15rem] flex justify-center items-center text-zinc-100 bg-[#150050] duration-800 hover:scale-105 cursor-pointerw-[28%] h-[15rem] basis-full md:basis-[calc(50%-12px)] lg:basis-[calc(33.333%-16px)]">
         <CardHeader className="size-full flex justify-between">
           <h2>{name}</h2>
           <Link
@@ -28,11 +28,18 @@ const ProjectCart = ({ name, description, stack }: CardProp) => {
           </Link>
         </CardHeader>
         <CardContent>
-          <p>{description}</p>
+          <p className=" text-[clamp(0.5rem,1.5vw,0.8rem)] leading-7">
+            {description}
+          </p>
         </CardContent>
         <CardFooter className="w-full h-[4rem] flex gap-4 bg-[#150050]">
           {stack.map((item) => (
-            <p key={item} className="bg-zinc-900 p-1 border">{item}</p>
+            <p
+              key={item}
+              className="bg-zinc-900 p-1 border  text-[clamp(0.5rem,1vw,0.8rem)] leading-7"
+            >
+              {item}
+            </p>
           ))}
         </CardFooter>
       </Card>

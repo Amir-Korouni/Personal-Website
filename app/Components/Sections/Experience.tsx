@@ -6,20 +6,21 @@ const Experience = () => {
   return (
     <section
       className={Container.container}
-      id="experience"
       data-aos="fade-left"
     >
       <section className={Container.subContainer}>
         <div>
           <p className="text-foreground mb-5">04 / Experience</p>
-          <h2 className="text-6xl">Experience</h2>
+          <h2 className="text-6xl text-[clamp(2rem,5vw,5rem)] font-bold">
+            Experience
+          </h2>
           <p className="mt-4">Let's see my timeline experience.</p>
         </div>
 
-        <div className="relative mt-20 w-full">
+        <div className="relative mt-20 w-full ">
           <div className="absolute top-3 left-0 w-full h-px bg-zinc-700" />
 
-          <div className="flex justify-between gap-5">
+          <div className="flex justify-between gap-5 ">
             {experiences.map((exp) => (
               <div
                 className="relative flex flex-col items-center w-full"
@@ -33,19 +34,31 @@ const Experience = () => {
           </div>
         </div>
       </section>
-
       <div
         className="
-                absolute
-                z-[-1]
-                top-[20%]
-                left-[12%]
-                w-[600px]
-                h-[400px]
-                rounded-full
-                bg-blue-600/15
-                blur-[120px]
-              "
+            absolute
+            z-[-1]
+            bottom-[10%]
+            right-[5%]
+            w-[300px]
+            h-[220px]
+            rounded-full
+            bg-blue-600/15
+            blur-[80px]
+
+            sm:w-[400px]
+            sm:h-[280px]
+
+            md:right-[8%]
+            md:w-[500px]
+            md:h-[350px]
+            md:blur-[100px]
+
+            lg:right-[12%]
+            lg:w-[600px]
+            lg:h-[400px]
+            lg:blur-[120px]
+          "
       />
     </section>
   );

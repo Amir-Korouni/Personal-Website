@@ -6,11 +6,11 @@ const About = () => {
       <section className={Container.container} id="about" data-aos="fade-right">
         <section className={Container.subContainer}>
           <div>
-            <p className="text-zinc-100 mb-5">01 / About</p>
+            <p className="text-foreground mb-5">01 / About</p>
             <h2 className="text-6xl">Info about me</h2>
           </div>
           <div className="flex flex-col ">
-            <div className="w-full h-[50vh]  border rounded flex justify-center items-center px-10 ">
+            <div className="w-full h-[50vh] border border-zinc-500 rounded flex justify-center items-center px-10">
               <p className="text-2xl">
                 Lorem ipsum, dolor sit amet consectetur adipisicing elit. Alias
                 saepe quibusdam nesciunt deleniti ratione? Beatae porro dolor

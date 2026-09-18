@@ -14,11 +14,11 @@ const Contact = () => {
       >
         <section className={Container.subContainer}>
           <div>
-            <p className="text-zinc-100 mb-5">05 / Contact</p>
+            <p className="text-foreground mb-5">05 / Contact</p>
             <h2 className="text-6xl">Contact</h2>
             <p className="mt-4">Let's Build Something</p>
           </div>
-          <div className="w-full h-[50vh] flex flex-col justify-center items-center gap-5 bg-[#101010] border border-[#610094] rounded drop-shadow-[0_0_40px_#150050] text-foreground">
+          <div className="w-full h-[50vh] flex flex-col justify-center items-center gap-5 bg-[#101010] border border-[#610094] rounded duration-600 drop-shadow-[0_0_40px_#150050] hover:drop-shadow-[0_0_100px_#610094] text-foreground">
             <Mail size={120} color="#610094" />
             <h2 className="text-zinc-100 text-5xl">Get in touch</h2>
             <h3 className="text-zinc-100">Remote / Worldwide</h3>

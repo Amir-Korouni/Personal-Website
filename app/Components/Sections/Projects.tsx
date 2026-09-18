@@ -8,7 +8,7 @@ const Projects = () => {
       <section className={Container.container} id="project">
         <section className={Container.subContainer}>
           <div>
-            <p className="text-zinc-100 mb-5">03 / About</p>
+            <p className="text-foreground mb-5">03 / About</p>
             <h2 className="text-6xl">Projects</h2>
             <p className="mt-4">
               Let's see projects that i developed and work on it.

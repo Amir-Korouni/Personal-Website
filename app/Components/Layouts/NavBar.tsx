@@ -9,7 +9,7 @@ const NavBar = () => {
         id="navbar"
         className="w-full h-[5rem] flex justify-center fixed z-[21]"
       >
-        <section className="w-[55%] h-full flex justify-between items-center mt-2 px-5 bg-[#000000c8] border rounded-[20px]">
+        <section className="w-[55%] h-full flex justify-between items-center mt-2 px-5 bg-[#000000c8] border border-zinc-100 rounded-[20px] text-zinc-100">
           <div className="flex justify-center items-center gap-2">
             <div className="w-[40px] h-[40px] bg-[#610094] flex justify-center items-center border rounded">
               AK

@@ -19,7 +19,7 @@ const Skills = () => {
       <section className={Container.container} id="skills" data-aos="fade-down">
         <section className={Container.subContainer}>
           <div>
-            <p className="text-zinc-100 mb-5">02 / SKILLS</p>
+            <p className="text-foreground mb-5">02 / SKILLS</p>
             <h2 className="text-6xl">My Skills</h2>
             <p className="mt-4">
               The tools and technologies I learn and use it.

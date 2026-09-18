@@ -11,7 +11,7 @@ const Experience = () => {
     >
       <section className={Container.subContainer}>
         <div>
-          <p className="text-zinc-100 mb-5">04 / Experience</p>
+          <p className="text-foreground mb-5">04 / Experience</p>
           <h2 className="text-6xl">Experience</h2>
           <p className="mt-4">Let's see my timeline experience.</p>
         </div>

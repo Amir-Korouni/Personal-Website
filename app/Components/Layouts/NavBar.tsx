@@ -76,7 +76,7 @@ const NavBar = () => {
                 <Menu size={20} />
               </SheetTrigger>
 
-              <SheetContent className="w-[40%] sm:w-[350px]">
+              <SheetContent className="w-[80vw] sm:w-[350px]">
                 <nav className="flex flex-col gap-6 mt-10 px-5">
                   <Link href="#about">About</Link>
                   <Link href="#skills">Skills</Link>

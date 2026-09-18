@@ -6,7 +6,7 @@ const Experience = () => {
   return (
     <section
       className={Container.container}
-      data-aos="fade-left"
+      data-aos="fade-down"
     >
       <section className={Container.subContainer}>
         <div>

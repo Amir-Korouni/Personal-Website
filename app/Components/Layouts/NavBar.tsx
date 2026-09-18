@@ -8,10 +8,6 @@ import { Button } from "@/components/ui/button";
 import { useEffect } from "react";
 
 const NavBar = () => {
-  const width = document.querySelector("navbar")?.getBoundingClientRect();
-  useEffect(() => {
-    console.log(width);
-  }, []);
   return (
     <>
       <nav

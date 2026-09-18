@@ -7,9 +7,9 @@
   position: relative;
   z-index: 11;
 }
-/* md:w-[80%] lg:w-[70%] xl:w[60%] h-[80%] */
+
 .subContainer {
-  max-width: 60%;
+  width: 60%;
   display: flex;
   flex-direction: column;
   justify-content: center;

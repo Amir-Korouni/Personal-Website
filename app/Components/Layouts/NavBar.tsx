@@ -1,17 +1,42 @@
+"use client";
+
 import { Languages, Menu } from "lucide-react";
 import Link from "next/link";
 import ThemeToggle from "../ui/ThemeToggle";
 import { Sheet, SheetContent, SheetTrigger } from "@/components/ui/sheet";
 import { Button } from "@/components/ui/button";
+import { useEffect } from "react";
 
 const NavBar = () => {
+  const width = document.querySelector("navbar")?.getBoundingClientRect();
+  useEffect(() => {
+    console.log(width);
+  }, []);
   return (
     <>
       <nav
         id="navbar"
-        className="w-full h-[5rem] flex justify-center items-center fixed z-[21]"
+        className="fixed left-0 top-0 z-[21] flex w-[100vw] justify-center"
       >
-        <section className="w-[94%] md:w-[80%] lg:w-[70%] xl:w[60%] h-[80%] flex justify-between items-center mt-2 px-5 bg-[#000000c8] border border-zinc-100 rounded-[20px] text-zinc-100">
+        <section
+          className=" mt-2
+          flex
+          h-[4rem]
+          w-[90%]
+          items-center
+          justify-between
+          rounded-[20px]
+          border
+          border-zinc-100
+          bg-[#000000c8]
+          px-4
+          text-zinc-100
+          sm:w-[85%]
+          md:w-[75%]
+          lg:w-[65%]
+          xl:w-[60%]
+    "
+        >
           <div className="flex justify-center items-center gap-2">
             <div className="w-[40px] h-[40px] bg-[#610094] flex justify-center items-center border rounded">
               AK
@@ -45,16 +70,13 @@ const NavBar = () => {
               </div>
             </div>
           </div>
-          <div className="w-[45%] h-full flex md:hidden justify-end">
+          <div className="flex shrink-0 md:hidden">
             <Sheet>
-              <SheetTrigger>
-                tems-center
-                <Button variant="ghost" size="icon">
-                  <Menu />
-                </Button>
+              <SheetTrigger className="inline-flex size-10 items-center justify-center rounded-md border">
+                <Menu size={20} />
               </SheetTrigger>
 
-              <SheetContent className="w-[10px]">
+              <SheetContent className="w-[40%] sm:w-[350px]">
                 <nav className="flex flex-col gap-6 mt-10 px-5">
                   <Link href="#about">About</Link>
                   <Link href="#skills">Skills</Link>

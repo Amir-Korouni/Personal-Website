@@ -20,7 +20,7 @@ const Contact = () => {
             </h2>
             <p className="mt-4">Let's Build Something</p>
           </div>
-          <div className="min-w-full h-[50vh] flex flex-col justify-center items-center gap-5 bg-[#101010] border border-[#610094] rounded duration-600 drop-shadow-[0_0_40px_#150050] hover:drop-shadow-[0_0_100px_#610094] text-foreground">
+          <div className="w-full h-[50vh] flex flex-col justify-center items-center gap-5 bg-[#101010] border border-[#610094] rounded duration-600 drop-shadow-[0_0_40px_#150050] hover:drop-shadow-[0_0_100px_#610094] text-foreground">
             <Mail size={120} color="#610094" />
             <h2 className="text-zinc-100 text-5xl text-[clamp(2rem,5vw,3rem)] font-bold">
               Get in touch

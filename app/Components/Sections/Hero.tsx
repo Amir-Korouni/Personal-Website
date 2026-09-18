@@ -31,12 +31,12 @@ const Hero = () => {
           </div>
           <div className="w-full flex justify-between">
             <Link href="#projects">
-              <Button className="w-[200px] h-[4rem] bg-[#610094] hover:bg-[#150050] flex justify-center items-center gap-2 cursor-pointer float-right ">
+              <Button className="w-[200px] h-[4rem] bg-[#610094] hover:bg-[#7e00c3] flex justify-center items-center gap-2 cursor-pointer float-right ">
                 Projects
               </Button>
             </Link>
             <Link href="https://github.com">
-              <Button className="w-[200px] h-[4rem] bg-[#610094] hover:bg-[#150050] flex justify-center items-center gap-2 cursor-pointer float-right ">
+              <Button className="w-[200px] h-[4rem] bg-[#610094] hover:bg-[#7e00c3] flex justify-center items-center gap-2 cursor-pointer float-right ">
                 Git hub <ArrowBigRight />
               </Button>
             </Link>

@@ -1,5 +1,5 @@
 import { Button } from "@/components/ui/button";
-import { ArrowBigLeft, ArrowBigRight } from "lucide-react";
+import { ArrowBigRight } from "lucide-react";
 import Link from "next/link";
 import Container from "../../style.module.css";
 import TextAnimation from "../ui/TextAnimation";
@@ -16,7 +16,7 @@ const Hero = () => {
           <div className="w-[50%] h-[4rem] border-4 border-[#150050] px-5 flex justify-center items-center rounded text-4xl">
             <TextAnimation message="  Web Developer" speed={60} />
           </div>
-          <h1 className="text-6xl text-[clamp(2.5rem,7vw,6rem)] font-bold leading-[1.05]">
+          <h1 className="text-6xl text-[clamp(2.5rem,7vw,4rem)] font-bold leading-[1.05]">
             Hi, I'm Amir Korouni
           </h1>
           <div>

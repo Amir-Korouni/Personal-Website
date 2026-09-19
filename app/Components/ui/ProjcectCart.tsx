@@ -12,16 +12,17 @@ type CardProp = {
   name: string;
   description: string;
   stack: string[];
+  githubLink: string;
 };
 
-const ProjectCart = ({ name, description, stack }: CardProp) => {
+const ProjectCart = ({ name, description, githubLink, stack }: CardProp) => {
   return (
     <>
-      <Card className="w-[225px] h-[15rem] flex justify-center items-center text-zinc-100 bg-[#150050] duration-800 hover:scale-105 cursor-pointerw-[28%] h-[15rem] basis-full md:basis-[calc(50%-12px)] lg:basis-[calc(33.333%-16px)]">
+      <Card className="w-[225px] h-[20rem] flex justify-center items-center text-zinc-100 bg-[#150050] duration-800 hover:scale-105 cursor-pointerw-[28%] h-[15rem] basis-full md:basis-[calc(50%-12px)] lg:basis-[calc(33.333%-16px)]">
         <CardHeader className="size-full flex justify-between">
           <h2>{name}</h2>
           <Link
-            href="https://github.com"
+            href={githubLink}
             className="w-[40px] h-[40px] flex justify-center items-center bg-zinc-800 rounded"
           >
             <FaGithub size={30} />

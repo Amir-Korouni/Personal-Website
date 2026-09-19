@@ -15,7 +15,7 @@ const Contact = () => {
         <section className={Container.subContainer}>
           <div>
             <p className="text-foreground mb-5">05 / Contact</p>
-            <h2 className="text-6xl text-[clamp(2rem,5vw,5rem)] font-bold">
+            <h2 className="text-6xl text-[clamp(2rem,5vw,4rem)] font-bold">
               Contact
             </h2>
             <p className="mt-4">Let's Build Something</p>

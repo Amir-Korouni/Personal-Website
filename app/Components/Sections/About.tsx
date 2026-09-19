@@ -7,7 +7,7 @@ const About = () => {
         <section className={Container.subContainer}>
           <div>
             <p className="text-foreground mb-5">01 / About</p>
-            <h2 className="text-6xl text-[clamp(2rem,5vw,5rem)] font-bold">
+            <h2 className="text-6xl text-[clamp(2rem,5vw,4rem)] font-bold">
               Info about me
             </h2>
           </div>

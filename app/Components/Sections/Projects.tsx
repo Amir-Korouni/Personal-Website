@@ -25,6 +25,7 @@ const Projects = () => {
                 key={card.name}
                 name={card.name}
                 stack={card.stack}
+                githubLink={card.githubLink}
                 description={card.description}
               />
             ))}

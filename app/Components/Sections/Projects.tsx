@@ -17,12 +17,12 @@ const Projects = async () => {
       <section className={Container.container} id="project">
         <section className={Container.subContainer}>
           <div>
-            <p className="text-foreground mb-5 mt-5">03 / About</p>
+            <p className="text-foreground mb-5 mt-5">03 / ${t("secInfo")}</p>
             <h2 className="text-6xl text-[clamp(2rem,5vw,3rem)] font-bold">
-              Projects
+              {t("Title")}
             </h2>
             <p className="mt-4 text-[clamp(0.9rem,1.5vw,1.8rem)] leading-relaxed">
-              Let's see projects that i developed and work on it.
+              {t("Description")}
             </p>
           </div>
           <div

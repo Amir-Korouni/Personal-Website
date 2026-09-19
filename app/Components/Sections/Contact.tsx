@@ -2,8 +2,11 @@ import { Mail } from "lucide-react";
 import Container from "../../style.module.css";
 import Link from "next/link";
 import { Button } from "@/components/ui/button";
+import { getTranslations } from "next-intl/server";
 
-const Contact = () => {
+const Contact = async () => {
+  const t = await getTranslations("Contact");
+
   return (
     <>
       <section
@@ -14,29 +17,29 @@ const Contact = () => {
       >
         <section className={Container.subContainer}>
           <div>
-            <p className="text-foreground mb-5">05 / Contact</p>
+            <p className="text-foreground mb-5">05 / {t("Title")}</p>
             <h2 className="text-6xl text-[clamp(2rem,5vw,4rem)] font-bold">
-              Contact
+              {t("Info")}
             </h2>
-            <p className="mt-4">Let's Build Something</p>
+            <p className="mt-4">{t("Description")}</p>
           </div>
           <div className="w-full h-[50vh] flex flex-col justify-center items-center gap-5 bg-[#101010] border border-[#610094] rounded duration-600 drop-shadow-[0_0_40px_#150050] hover:drop-shadow-[0_0_100px_#610094] text-foreground">
             <Mail size={120} color="#610094" />
             <h2 className="text-zinc-100 text-5xl text-[clamp(2rem,5vw,3rem)] font-bold">
-              Get in touch
+              {t("secInfo")}
             </h2>
             <h3 className="text-zinc-100 text-[clamp(0.9rem,1.5vw,1.8rem)] leading-relaxed">
-              Remote / Worldwide
+              {t("Remote")}
             </h3>
             <Link
-              href="https://email.com"
+              href={t("Email")}
               className="text-zinc-100 text-[clamp(0.9rem,1.5vw,1.8rem)] leading-relaxed"
             >
-              www.darkghost87@gmail.com
+              {t("Email")}
             </Link>
             <div className="flex gap-3">
               <Link
-                href="https://github.com"
+                href="https://github.com/Amir-Korouni"
                 className="max-w-[120px] h-[2.5rem] duration-400 cursor-pointer hover:-translate-x-1 hover:-translate-y-2 "
               >
                 <Button className="size-full text-zinc-100 bg-[#150050] hover:bg-[#220080]">
@@ -52,7 +55,7 @@ const Contact = () => {
                 </Button>
               </Link>
               <Link
-                href="https://instagram.com"
+                href="https://instagram.com/amir_programming80"
                 className="max-w-[120px] h-[2.5rem] duration-400 cursor-pointer hover:-translate-x-1 hover:-translate-y-2 "
               >
                 <Button className="size-full text-zinc-100 bg-[#150050] hover:bg-[#220080]">

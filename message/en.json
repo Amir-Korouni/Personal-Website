@@ -1,0 +1,162 @@
+{
+  "Navbar": {
+    "About": "About",
+    "Skills": "Skills",
+    "Projects": "Projects",
+    "Experience": "Experience",
+    "Contact": "Contact"
+  },
+
+  "Hero": {
+    "Title": "Web Developer",
+    "Name": "I'm Amir Korouni",
+    "Stack": " Frontend Developer React • TypeScript • Next.js",
+    "Description": "A developer who loves turning ideas into clean, modern, and functional web experiences. Always learning. Always building. Passionate about exploring new technologies, solving problems, and turning challenges into real-world projects.",
+    "ProjectsButton": "Projects",
+    "GithubButton": "GitHub"
+  },
+
+  "About": {
+    "secInfo": "A Little About Me",
+    "Title": "About Me",
+    "Description": "I'm Amir, a developer who enjoys turning ideas into things people can actually use. My programming journey started with C# and gradually grew into web development, where I found myself enjoying the process of building interfaces, solving problems, and bringing ideas to life. These days, I'm focused on React, TypeScript, Next.js, and Node.js, while constantly exploring new technologies and improving my skills through real-world projects. For me, coding isn't just about writing code — it's about learning, experimenting, breaking things, fixing them, and building something better every time. Still learning. Still building. Still curious."
+  },
+
+  "Skills": {
+    "secInfo": "My Skills",
+    "Title": "Skills",
+    "Description": "The tools I use to turn my ideas into reality.",
+
+    "Items": [
+      {
+        "skill": "C#",
+        "icon": "csharp",
+        "desc": "Started my programming journey with C# and learned the fundamentals of programming."
+      },
+      {
+        "skill": "JavaScript",
+        "icon": "javascript",
+        "desc": "Building interactive web experiences and learning modern JavaScript."
+      },
+      {
+        "skill": "React",
+        "icon": "react",
+        "desc": "Creating dynamic and reusable user interfaces with React."
+      },
+      {
+        "skill": "TypeScript",
+        "icon": "typescript",
+        "desc": "Writing safer, more maintainable, and scalable applications."
+      },
+      {
+        "skill": "Tailwind CSS",
+        "icon": "tailwind",
+        "desc": "Building modern and responsive interfaces with utility-first styling."
+      },
+      {
+        "skill": "Linux",
+        "icon": "linux",
+        "desc": "Working with Linux environments, terminal tools, and system configuration."
+      },
+      {
+        "skill": "Git",
+        "icon": "git",
+        "desc": "Managing projects, tracking changes, and working with version control."
+      },
+      {
+        "skill": "Docker",
+        "icon": "docker",
+        "desc": "Learning containerization and building consistent development environments."
+      },
+      {
+        "skill": "n8n",
+        "icon": "n8n",
+        "desc": "Exploring workflow automation and connecting different services together."
+      }
+    ]
+  },
+
+  "Projects": {
+    "secInfo": "My Projects",
+    "Title": "Projects",
+    "Description": "Some of the projects I've worked on.",
+
+    "Items": [
+      {
+        "name": "Headphone Market",
+        "description": "An online store for audio products, designed with a focus on a modern interface and user experience.",
+        "githubLink": "https://github.com/Amir-Korouni/UserProfile.git",
+        "stack": ["React", "TypeScript", "Tailwind CSS"]
+      },
+      {
+        "name": "User Profile",
+        "description": "A project for creating and displaying user profiles using modern web technologies.",
+        "githubLink": "https://github.com/Amir-Korouni/UserProfile.git",
+        "stack": ["React", "TypeScript", "Tailwind CSS"]
+      },
+      {
+        "name": "Admin Panel",
+        "description": "A practical and modern admin panel designed to simplify the management of different parts of an online store.",
+        "githubLink": "https://github.com/Amir-Korouni/Admin-Panel_1.git",
+        "stack": ["HTML", "CSS", "JavaScript"]
+      },
+      {
+        "name": "XO Game in Terminal",
+        "description": "A simple Tic-Tac-Toe game that runs in the terminal using Node.js and allows two players to play against each other.",
+        "githubLink": "https://github.com/Amir-Korouni/XO-Game.git",
+        "stack": ["JavaScript", "Node.js"]
+      },
+      {
+        "name": "Game Info",
+        "description": "A website for discovering and downloading video games, designed to provide a professional and engaging experience for gamers.",
+        "githubLink": "https://github.com/Amir-Korouni/GameInfo.git",
+        "stack": ["HTML", "CSS", "JavaScript"]
+      },
+      {
+        "name": "Blog System",
+        "description": "A blog system for creating, managing, and displaying blog content using modern web technologies.",
+        "githubLink": "https://github.com/Amir-Korouni/BlogSystem.git",
+        "stack": ["React", "TypeScript", "Tailwind CSS"]
+      },
+      {
+        "name": "Main-BookStore",
+        "description": "A frontend project for an online bookstore, designed to provide a simple and engaging experience for book lovers.",
+        "githubLink": "https://github.com/Amir-Korouni/Main-BookStore.git",
+        "stack": ["HTML", "CSS", "JavaScript"]
+      }
+    ]
+  },
+
+  "Experience": {
+    "secInfo": "My Journey",
+    "Title": "Experience",
+    "Description": "My learning and growth journey in the world of programming.",
+
+    "Items": [
+      {
+        "year": "2024",
+        "title": "Started Programming",
+        "stack": ["C#"]
+      },
+      {
+        "year": "2025",
+        "title": "Web Fundamentals",
+        "stack": ["HTML", "CSS", "JavaScript"]
+      },
+      {
+        "year": "2026",
+        "title": "Modern Web Development",
+        "stack": ["TypeScript", "React", "Next.js", "Tailwind CSS"]
+      }
+    ]
+  },
+
+  "Contact": {
+    "Title": "Contact",
+    "secInfo": "Get in Touch",
+    "Info": "Let's Connect",
+    "Remote": "Remote / Worldwide",
+    "Email": " www.darkghost87@outlook.com",
+    "Description": "Have an idea, a project, or something you'd like to talk about? Feel free to reach out through the form below, email, or social media."
+  }
+}

@@ -1,8 +1,18 @@
-import { experiences } from "@/app/Types/Portfolio";
 import Container from "../../style.module.css";
 import ExperienceCard from "../ui/ExperienceCard";
+import { getTranslations } from "next-intl/server";
 
-const Experience = () => {
+const Experience = async () => {
+  const t = await getTranslations("Experience");
+
+  type ExperienceType = {
+    year: string;
+    title: string;
+    stack: string[];
+  };
+
+  const experienceCard: ExperienceType[] = t.raw("Items");
+
   return (
     <section
       className={Container.container}
@@ -22,7 +32,7 @@ const Experience = () => {
           <div className="absolute top-3 left-0 w-full h-px bg-zinc-700" />
 
           <div className="flex justify-between gap-5 ">
-            {experiences.map((exp) => (
+            {experienceCard.map((exp) => (
               <div
                 className="relative flex flex-col items-center w-full"
                 key={exp.title}

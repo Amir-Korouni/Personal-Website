@@ -3,8 +3,11 @@ import { ArrowBigRight } from "lucide-react";
 import Link from "next/link";
 import Container from "../../style.module.css";
 import TextAnimation from "../ui/TextAnimation";
+import { getTranslations } from "next-intl/server";
 
-const Hero = () => {
+const Hero = async () => {
+  const t = await getTranslations("Hero");
+
   return (
     <>
       <section
@@ -14,32 +17,27 @@ const Hero = () => {
       >
         <section className={Container.subContainer}>
           <div className="w-[50%] h-[4rem] border-4 border-[#150050] px-5 flex justify-center items-center rounded text-4xl">
-            <TextAnimation message="  Web Developer" speed={60} />
+            <TextAnimation message={t("Title")} speed={60} />
           </div>
           <h1 className="text-6xl text-[clamp(2.5rem,7vw,4rem)] font-bold leading-[1.05]">
-            Hi, I'm Amir Korouni
+            {t("Name")}
           </h1>
           <div>
             <h3 className="text-2xl text-[clamp(0.9rem,1.5vw,1.8rem)] leading-relaxed">
-              Frontend Developer React • TypeScript • Next.js
+              {t("Stack")}
             </h3>
-            <TextAnimation
-              message="  Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ipsa,
-              reprehenderit? Id modi porro tempora vitae corrupti ipsum culpa
-              numquam ad exercitationem sint, aspernatur quidem asperiores magni
-              ullam dicta fugiat perspiciatis."
-              speed={10}
-            />
+            <TextAnimation message={t("Description")} speed={10} />
           </div>
           <div className="w-full flex justify-between">
             <Link href="#projects">
               <Button className="max-w-[200px] h-[3rem] bg-[#610094] hover:bg-[#7e00c3] flex justify-center items-center gap-2 cursor-pointer float-right ">
-                Projects
+                {t("ProjectsButton")}
               </Button>
             </Link>
             <Link href="https://github.com">
               <Button className="max-w-[200px] h-[3rem] bg-[#610094] hover:bg-[#7e00c3] flex justify-center items-center gap-2 cursor-pointer float-right ">
-                Git hub <ArrowBigRight />
+                {t("GithubButton")}
+                <ArrowBigRight />
               </Button>
             </Link>
           </div>

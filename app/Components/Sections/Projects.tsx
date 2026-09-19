@@ -1,8 +1,17 @@
-import { projectsCard } from "@/app/Types/Portfolio";
 import Container from "../../style.module.css";
 import ProjectCart from "../ui/ProjcectCart";
+import { getTranslations } from "next-intl/server";
+const Projects = async () => {
+  const t = await getTranslations("Projects");
 
-const Projects = () => {
+  type ProjectCardTypes = {
+    name: string;
+    description: string;
+    githubLink: string;
+    stack: string[];
+  };
+
+  const projectsCard: ProjectCardTypes[] = t.raw("Items");
   return (
     <>
       <section className={Container.container} id="project">

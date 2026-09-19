@@ -1,4 +1,6 @@
 allowBuilds:
-  pnpm: set this to true or false
+  '@parcel/watcher': false
+  '@swc/core': false
+  pnpm: false
   sharp: false
   unrs-resolver: false

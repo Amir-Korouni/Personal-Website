@@ -1,0 +1,159 @@
+{
+  "Navbar": {
+    "About": "درباره",
+    "Skills": "مهارت ها",
+    "Projects": "پروژه ها",
+    "Experience": "تجربه",
+    "Contact": "تماس"
+  },
+
+  "Hero": {
+    "Title": "توسعه دهنده ی وب",
+    "Name": "من امیر کرونی هستم",
+    "Stack": "توسعه دهنده ی فرانت اند ری اکت / تایپ اسکریپت / نکست",
+    "Description": "توسعه‌دهنده‌ای که عاشق تبدیل ایده‌ها به تجربه‌های وب مدرن، تمیز و کاربردی است.همیشه در حال یادگیری، همیشه در حال ساختن. علاقه‌مند به کشف تکنولوژی‌های جدید، حل مسئله و تبدیل چالش‌ها به پروژه‌های واقعی. ",
+    "ProjectsButton": "پروژه ها",
+    "GithubButton": "گیت‌هاب"
+  },
+
+  "About": {
+    "secInfo": "اطلاعات شخصی",
+    "Title": "کمی درباره من",
+    "Description": "من امیرم؛ یک توسعه‌دهنده که از تبدیل ایده‌ها به چیزهایی که واقعاً قابل استفاده هستند لذت می‌بره. مسیر برنامه‌نویسی من با C# شروع شد و به مرور وارد دنیای توسعه وب شدم؛ جایی که از ساخت رابط‌های کاربری، حل مسئله و تبدیل ایده‌ها به پروژه‌های واقعی لذت بردم. این روزها تمرکزم بیشتر روی React، TypeScript، Next.js و Node.js هست و در کنار کار روی پروژه‌های واقعی، همیشه در حال یادگیری تکنولوژی‌های جدید و بهتر کردن مهارت‌هام هستم. برای من برنامه‌نویسی فقط نوشتن کد نیست؛ یاد گرفتنه، تجربه کردنه، خراب کردن، درست کردن و هر بار ساختن چیزی بهتر از قبل. هنوز در حال یادگیری. هنوز در حال ساختن. هنوز کنجکاو."
+  },
+
+  "Skills": {
+    "secInfo": "مهارت های من",
+    "Title": "مهارت ها",
+    "Description": "ابزارهایی که باهاشون ایده‌هام رو به واقعیت تبدیل می‌کنم.",
+
+    "Items": [
+      {
+        "skill": "C#",
+        "icon": "csharp",
+        "desc": "شروع مسیر برنامه‌نویسی من با C# و یادگیری مفاهیم پایه برنامه‌نویسی."
+      },
+      {
+        "skill": "JavaScript",
+        "icon": "javascript",
+        "desc": "ساخت تجربه‌های تعاملی وب و یادگیری JavaScript مدرن."
+      },
+      {
+        "skill": "React",
+        "icon": "react",
+        "desc": "ساخت رابط‌های کاربری پویا و قابل استفاده مجدد با React."
+      },
+      {
+        "skill": "TypeScript",
+        "icon": "typescript",
+        "desc": "نوشتن برنامه‌های امن‌تر، قابل نگهداری و مقیاس‌پذیرتر."
+      },
+      {
+        "skill": "Tailwind CSS",
+        "icon": "tailwind",
+        "desc": "ساخت رابط‌های مدرن و ریسپانسیو با استایل‌دهی Utility-first."
+      },
+      {
+        "skill": "Linux",
+        "icon": "linux",
+        "desc": "کار با محیط Linux، ابزارهای ترمینال و تنظیمات سیستم."
+      },
+      {
+        "skill": "Git",
+        "icon": "git",
+        "desc": "مدیریت پروژه، کنترل تغییرات و کار با Version Control."
+      },
+      {
+        "skill": "Docker",
+        "icon": "docker",
+        "desc": "یادگیری Containerization و ساخت محیط‌های توسعه یکسان."
+      },
+      {
+        "skill": "n8n",
+        "icon": "n8n",
+        "desc": "یادگیری اتوماسیون Workflow و اتصال سرویس‌های مختلف به یکدیگر."
+      }
+    ]
+  },
+
+  "Projects": {
+    "secInfo": "پروژه های من",
+    "Title": "پروژه ها",
+    "Description": "برخی از پروژه هایی که من انجام داده ام",
+
+    "Items": [
+      {
+        "name": "Headphone Market",
+        "description": "یک فروشگاه آنلاین برای محصولات صوتی که با تمرکز بر رابط کاربری مدرن و تجربه کاربری طراحی شده است.",
+        "githubLink": "https://github.com/Amir-Korouni/OnlineShop.git",
+        "stack": ["React", "TypeScript", "Tailwind CSS"]
+      },
+      {
+        "name": "User Profile",
+        "description": "یک پروژه برای ساخت و نمایش پروفایل کاربران با استفاده از تکنولوژی‌های مدرن وب.",
+        "githubLink": "https://github.com/Amir-Korouni/UserProfile.git",
+        "stack": ["React", "TypeScript", "Tailwind CSS"]
+      },
+      {
+        "name": "Admin Panel",
+        "description": "یک ادمین پنل کاربردی و مدرن برای مدیریت بخش‌های مختلف یک فروشگاه و ساده‌تر کردن فرآیند مدیریت.",
+        "githubLink": "https://github.com/Amir-Korouni/Admin-Panel_1.git",
+        "stack": ["HTML", "CSS", "JavaScript"]
+      },
+      {
+        "name": "XO Game in Terminal",
+        "description": "یک بازی ساده دوز (Tic-Tac-Toe) که در محیط ترمینال و با Node.js اجرا می‌شود و امکان بازی دو نفره را فراهم می‌کند.",
+        "githubLink": "https://github.com/Amir-Korouni/XO-Game.git",
+        "stack": ["JavaScript", "Node.js"]
+      },
+      {
+        "name": "Game Info",
+        "description": "یک وب‌سایت برای معرفی و دانلود بازی‌های ویدیویی که با هدف ارائه تجربه‌ای حرفه‌ای و جذاب برای گیمرها ساخته شده است.",
+        "githubLink": "https://github.com/Amir-Korouni/GameInfo.git",
+        "stack": ["HTML", "CSS", "JavaScript"]
+      },
+      {
+        "name": "Blog System",
+        "description": "یک سیستم وبلاگ برای ایجاد، مدیریت و نمایش محتوای وبلاگ با استفاده از تکنولوژی‌های مدرن وب.",
+        "githubLink": "https://github.com/Amir-Korouni/BlogSystem.git",
+        "stack": ["React", "TypeScript", "Tailwind CSS"]
+      },
+      {
+        "name": "Main-BookStore",
+        "description": "یک پروژه فرانت‌اند برای فروشگاه آنلاین کتاب که با هدف ایجاد تجربه‌ای ساده و جذاب برای علاقه‌مندان به کتاب طراحی شده است.",
+        "githubLink": "https://github.com/Amir-Korouni/Main-BookStore.git",
+        "stack": ["HTML", "CSS", "JavaScript"]
+      }
+    ]
+  },
+
+  "Experience": {
+    "secInfo": "تجربه های من",
+    "Title": "تجربه",
+    "Description": "مسیر یادگیری و رشد من در دنیای برنامه نویسی",
+
+    "Items": [
+      {
+        "year": "2024",
+        "title": "شروع برنامه نویسی",
+        "stack": ["C#"]
+      },
+      {
+        "year": "2025",
+        "title": "مبانی توسعه وب",
+        "stack": ["HTML", "CSS", "JavaScript"]
+      },
+      {
+        "year": "2026",
+        "title": "توسعه وب مدرن",
+        "stack": ["TypeScript", "React", "Next.js", "Tailwind CSS"]
+      }
+    ]
+  },
+
+  "Contact": {
+    "secInfo": "در تماس باشیم",
+    "Title": "با من در ارتباط باشید",
+    "Description": "ایده‌ای، پروژه‌ای یا چیزی برای گفت‌وگو دارید؟ خوشحال می‌شوم از طریق فرم زیر، ایمیل یا شبکه‌های اجتماعی با من در ارتباط باشید."
+  }
+}
